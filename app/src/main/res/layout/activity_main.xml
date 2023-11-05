@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TableLayout
+        android:id="@+id/tableLayoutid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:stretchColumns="0,1">
+        <TableRow android:padding="5dip">
+            <EditText
+                android:id="@+id/etAndroidVersion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text=""
+                android:hint="Enter Android Version"
+                android:layout_span="2" />
+        </TableRow>
+        <TableRow android:padding="5dip">
+            <EditText
+                android:id="@+id/etAndroidCodeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text=""
+                android:hint="Enter Android Code Name"
+                android:layout_span="2" />
+        </TableRow>
+        <TableRow android:padding="5dip">
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ADD"
+                android:onClick="addEntry"
+                android:layout_span="2" />
+        </TableRow>
+        <TableRow android:padding="5dip">
+            <TextView
+                android:text="Version"
+                android:background="@color/pink"/>
+            <TextView
+                android:text="Code Name"
+                android:background="@color/pink" />
+        </TableRow>
+        <TableRow android:padding="5dip">
+            <TextView
+                android:text="Android 9.0"
+                android:background="@color/pink" />
+            <TextView
+                android:text="Pie"
+                android:background="@color/pink" />
+        </TableRow>
+        <TableRow android:padding="5dip">
+            <TextView
+                android:text="Android 8.0"
+                android:background="@color/pink"/>
+            <TextView
+                android:text="Oreo"
+                android:background="@color/pink" />
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
